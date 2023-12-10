@@ -1,0 +1,24 @@
+---
+title: Introduction to React
+date: 26 Oct, 2023
+video: 2c9c2321-c8a3-49d3-81c5-97cec6d69dae
+---
+
+
+# hello This is the first lesson
+
+
+We are releasing Astro 4 to stay up to date with Vite, our internal build tool. Astro
+4 includes the latest version of Vite 5, which was just released last month.
+
+As Vite 5 is also a small major, most projects will be able to upgrade to Astro 4 with only minimal changes to your code if any at all.
+
+```
+export async function generateStaticParams() {
+  const batchesDir = "src/batches";
+  const files = fs.readdirSync(path.join(process.cwd(), batchesDir));
+  return files.map((filename) => ({ batch: filename.replace(".mdx", "") }));
+}
+```
+
+Additionally, in Astro 4 we are planning to bring some of the new features we have been working on over the last few months out of experimental status and mark them as stable. Stay tuned for more!
